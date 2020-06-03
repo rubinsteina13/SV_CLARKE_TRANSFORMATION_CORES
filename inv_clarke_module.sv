@@ -37,14 +37,15 @@
 module inv_clarke_module #(
 	parameter DATA_WIDTH = 10
 )(
-	input		logic									clk_i, rst_i,
-	input		logic signed [DATA_WIDTH-1:0]	al_i, be_i,
+	input	logic				clk_i, rst_i,
+	input	logic signed [DATA_WIDTH-1:0]	al_i, be_i,
 	output	logic signed [DATA_WIDTH-1:0]	a_o, b_o
 );
-	const		logic signed [DATA_WIDTH:0]		sqrt3 = 1.732050807 * (2**(DATA_WIDTH-1)-1);
-				logic signed [DATA_WIDTH-1:0]		al_latched, be_latched;
-				logic signed [DATA_WIDTH:0]		b;
-				logic signed [DATA_WIDTH*2-1:0]	be_mullby_sqrt3;
+	const	logic signed [DATA_WIDTH:0]	sqrt3 = 
+						1.732050807 * (2**(DATA_WIDTH-1)-1);
+		logic signed [DATA_WIDTH-1:0]	al_latched, be_latched;
+		logic signed [DATA_WIDTH:0]	b;
+		logic signed [DATA_WIDTH*2-1:0]	be_mullby_sqrt3;
 
 	always_ff @(posedge clk_i, posedge rst_i) begin
 		if(rst_i) begin
@@ -56,9 +57,9 @@ module inv_clarke_module #(
 		end
 	end
 
-	assign	a_o					= al_latched,
-				be_mullby_sqrt3 	= sqrt3 * be_latched,
-				b 						= signed'(be_mullby_sqrt3[DATA_WIDTH*2-1:DATA_WIDTH-1]) - al_latched,
-				b_o					= signed'(b[DATA_WIDTH:1]);
+	assign	a_o		= al_latched,
+		be_mullby_sqrt3	= sqrt3 * be_latched,
+		b 		= signed'(be_mullby_sqrt3[DATA_WIDTH*2-1:DATA_WIDTH-1]) - al_latched,
+		b_o		= signed'(b[DATA_WIDTH:1]);
 
 endmodule: inv_clarke_module
