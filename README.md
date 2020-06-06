@@ -1,7 +1,6 @@
 # Forward & Backward Clarke Transformation Digital IP-Cores
 
-Attention! This Clarke Transformation Digital IP-Cores works in case when A + B + C = 0 only !!!
-(where A,B,C - input vectors).
+Attention! This Clarke Transformation Digital IP-Cores works in case when A + B + C = 0 only !!! (where A,B,C - input vectors).
 
 * Project structure
   * forw_clarke_module.sv - Synthesizable Digital IP-Core of the Forward Clarke Transformation
@@ -23,16 +22,16 @@ Attention! This Clarke Transformation Digital IP-Cores works in case when A + B 
 # Backward Clarke Transformation IP-Core
 
 * User constants
- * DATA_WIDTH - input and output data bus resolution
+	* DATA_WIDTH - input and output data bus resolution
 * Inputs
- * clk_i - clock signal (rising edge is active)
- * rst_i - reset signal (high level is active)
- * al_i  - input vector Alpha
- * be_i  - input vector Beta
+	* clk_i - clock signal (rising edge is active)
+	* rst_i - reset signal (high level is active)
+ 	* al_i  - input vector Alpha
+ 	* be_i  - input vector Beta
 * Outputs
- * a_o   - output vector A
- * b_o   - output vector B
+ 	* a_o   - output vector A
+ 	* b_o   - output vector B
   
 # License
   
-MIT (./LICENSE "License Description")
+[MIT](./LICENSE "License Description")
