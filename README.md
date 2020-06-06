@@ -9,7 +9,7 @@ Attention! This Clarke Transformation IP-Cores works in case when A + B + C = 0 
   * forw_clarke_module.sv - Synthesizable Digital IP-Core of the Forward Clarke Transformation
   * inv_clarke_module.sv  - Synthesizable Digital IP-Core of the Backward (Inverse) Clarke Transformation
 
-# Forward Clarke Transformation IP-Core
+# forw_clarke_module description
 
 * User constants
   * DATA_WIDTH - input and output signals bus bit resolution
@@ -25,7 +25,7 @@ Attention! This Clarke Transformation IP-Cores works in case when A + B + C = 0 
 	* al_o = a_i;
 	* be_o = (a_i + 2 x b_i)/sqrt(3);
 
-# Backward Clarke Transformation IP-Core
+# inv_clarke_module description
 
 * User constants
 	* DATA_WIDTH - input and output data bus resolution
