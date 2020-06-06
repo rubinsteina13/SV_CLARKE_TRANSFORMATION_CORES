@@ -1,6 +1,7 @@
 # Forward & Backward Clarke Transformation Digital IP-Cores
 
 Attention! This Clarke Transformation Digital IP-Cores works in case when A + B + C = 0 only !!! (where A,B,C - input vectors).
+[More information about Clarke Transformations](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_transformation)
 
 * Project structure
 	* README.md - current file
