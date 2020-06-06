@@ -21,6 +21,9 @@ Attention! This Clarke Transformation Digital IP-Cores works in case when A + B 
 * Outputs
   * al_o  - output vector Alpha
   * be_o  - output vector Beta
+* Pseudocode
+	* al_o = a_i;
+	* be_o = (a_i + 2 x b_i)/sqrt(3);
 
 # Backward Clarke Transformation IP-Core
 
