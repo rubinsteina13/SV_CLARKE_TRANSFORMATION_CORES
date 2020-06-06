@@ -3,6 +3,8 @@
 Attention! This Clarke Transformation Digital IP-Cores works in case when A + B + C = 0 only !!! (where A,B,C - input vectors).
 
 * Project structure
+	* README.md - current file license description
+	* LICENSE - file with 
   * forw_clarke_module.sv - Synthesizable Digital IP-Core of the Forward Clarke Transformation
   * inv_clarke_module.sv  - Synthesizable Digital IP-Core of the Backward (Inverse) Clarke Transformation
 
